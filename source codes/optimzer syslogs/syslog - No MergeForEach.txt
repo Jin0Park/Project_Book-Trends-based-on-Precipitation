@@ -1,0 +1,318 @@
+2022-12-12 02:02:31,244 INFO org.apache.pig.ExecTypeProvider (main): Trying ExecType : LOCAL
+2022-12-12 02:02:31,245 INFO org.apache.pig.ExecTypeProvider (main): Trying ExecType : MAPREDUCE
+2022-12-12 02:02:31,247 INFO org.apache.pig.ExecTypeProvider (main): Trying ExecType : TEZ_LOCAL
+2022-12-12 02:02:31,247 INFO org.apache.pig.ExecTypeProvider (main): Trying ExecType : TEZ
+2022-12-12 02:02:31,247 INFO org.apache.pig.ExecTypeProvider (main): Picked TEZ as the ExecType
+2022-12-12 02:02:31,288 INFO org.apache.pig.Main (main): Loaded log4j properties from file: /etc/pig/conf/log4j.properties
+2022-12-12 02:02:31,293 INFO org.apache.pig.Main (main): Apache Pig version 0.17.0 (r: unknown) compiled Aug 13 2022, 08:01:07
+2022-12-12 02:02:31,294 INFO org.apache.pig.Main (main): Logging error messages to: /mnt/var/lib/hadoop/steps/s-XGRJAPIKH5UF/pig_1670810551239.log
+2022-12-12 02:02:34,306 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3://cs6240-assignment1-seanstevens/project/filterfirst_real.pig' for reading
+2022-12-12 02:02:34,375 INFO org.apache.pig.impl.util.Utils (main): Default bootup file /home/hadoop/.pigbootup not found
+2022-12-12 02:02:34,438 INFO org.apache.hadoop.conf.Configuration.deprecation (main): mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2022-12-12 02:02:34,439 INFO org.apache.pig.backend.hadoop.executionengine.HExecutionEngine (main): Connecting to hadoop file system at: hdfs://ip-172-31-48-151.us-west-2.compute.internal:8020
+2022-12-12 02:02:34,798 INFO org.apache.pig.PigServer (main): Pig Script ID for the session: PIG-filterfirst_real.pig-6c34e94f-73e1-4bfc-97d9-de4e37ba0981
+2022-12-12 02:02:34,938 INFO org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl (main): Timeline service address: ip-172-31-48-151.us-west-2.compute.internal:8188
+2022-12-12 02:02:35,283 INFO org.apache.pig.backend.hadoop.PigATSClient (main): Created ATS Hook
+2022-12-12 02:02:35,311 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:35,823 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:35,897 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:35,928 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:35,957 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:36,244 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:36,255 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:36,301 INFO org.apache.pig.impl.util.SpillableMemoryManager (main): Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+2022-12-12 02:02:36,309 INFO org.apache.hadoop.conf.Configuration.deprecation (main): mapred.textoutputformat.separator is deprecated. Instead, use mapreduce.output.textoutputformat.separator
+2022-12-12 02:02:36,369 INFO org.apache.pig.tools.pigstats.ScriptState (main): Pig features used in the script: HASH_JOIN,GROUP_BY,ORDER_BY,DISTINCT,FILTER
+2022-12-12 02:02:36,385 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:36,387 INFO org.apache.pig.data.SchemaTupleBackend (main): Key [pig.schematuple] was not set... will not generate code.
+2022-12-12 02:02:36,415 INFO org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer (main): {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, NestedLimitOptimizer, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter], RULES_DISABLED=[MergeForEach]}
+2022-12-12 02:02:36,450 INFO org.apache.pig.newplan.logical.rules.ColumnPruneVisitor (main): Columns pruned for Book: $0, $2, $3, $4, $5, $6
+2022-12-12 02:02:36,451 INFO org.apache.pig.newplan.logical.rules.ColumnPruneVisitor (main): Columns pruned for Checkout: $0, $1, $2, $7, $8, $9, $10, $11
+2022-12-12 02:02:36,452 INFO org.apache.pig.newplan.logical.rules.ColumnPruneVisitor (main): Columns pruned for l: $0
+2022-12-12 02:02:36,542 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:36,556 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Tez staging directory is /tmp/temp2002455939 and resources directory is /tmp/temp2002455939
+2022-12-12 02:02:36,578 INFO org.apache.pig.backend.hadoop.executionengine.tez.plan.TezCompiler (main): File concatenation threshold: 100 optimistic? false
+2022-12-12 02:02:36,618 INFO org.apache.pig.backend.hadoop.executionengine.util.CombinerOptimizerUtil (main): Choosing to move algebraic foreach to combiner
+2022-12-12 02:02:36,639 INFO org.apache.pig.backend.hadoop.executionengine.tez.plan.optimizer.SecondaryKeyOptimizerTez (main): Using Secondary Key Optimization in the edge between vertex - scope-214 and vertex - scope-224
+2022-12-12 02:02:36,672 INFO org.apache.hadoop.conf.Configuration.deprecation (main): mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2022-12-12 02:02:36,726 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 1
+2022-12-12 02:02:36,726 INFO org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil (main): Total input paths to process : 1
+2022-12-12 02:02:36,734 INFO com.hadoop.compression.lzo.GPLNativeCodeLoader (main): Loaded native gpl library
+2022-12-12 02:02:36,736 INFO com.hadoop.compression.lzo.LzoCodec (main): Successfully loaded & initialized native-lzo library [hadoop-lzo rev 049362b7cf53ff5f739d6b1532457f2c6cd495e8]
+2022-12-12 02:02:36,883 INFO org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil (main): Total input paths (combined) to process : 138
+2022-12-12 02:02:36,931 INFO org.apache.tez.mapreduce.hadoop.MRInputHelpers (main): NumSplits: 138, SerializedSize: 56028
+2022-12-12 02:02:36,966 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 1
+2022-12-12 02:02:36,966 INFO org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil (main): Total input paths to process : 1
+2022-12-12 02:02:36,968 INFO org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil (main): Total input paths (combined) to process : 186
+2022-12-12 02:02:36,985 INFO org.apache.tez.mapreduce.hadoop.MRInputHelpers (main): NumSplits: 186, SerializedSize: 79422
+2022-12-12 02:02:37,019 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 1
+2022-12-12 02:02:37,019 INFO org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil (main): Total input paths to process : 1
+2022-12-12 02:02:37,020 INFO org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil (main): Total input paths (combined) to process : 1
+2022-12-12 02:02:37,020 INFO org.apache.tez.mapreduce.hadoop.MRInputHelpers (main): NumSplits: 1, SerializedSize: 418
+2022-12-12 02:02:37,035 INFO org.apache.pig.builtin.PigStorage (main): Using PigTextInputFormat
+2022-12-12 02:02:37,036 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 1
+2022-12-12 02:02:37,036 INFO org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil (main): Total input paths to process : 1
+2022-12-12 02:02:37,036 INFO org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil (main): Total input paths (combined) to process : 1
+2022-12-12 02:02:37,037 INFO org.apache.tez.mapreduce.hadoop.MRInputHelpers (main): NumSplits: 1, SerializedSize: 423
+2022-12-12 02:02:37,427 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler (main): Local resource: hive-exec-3.1.3-amzn-1.jar
+2022-12-12 02:02:37,427 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler (main): Local resource: antlr-runtime-3.4.jar
+2022-12-12 02:02:37,427 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler (main): Local resource: pig-0.17.0-core-h3.jar
+2022-12-12 02:02:37,427 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler (main): Local resource: automaton-1.11-8.jar
+2022-12-12 02:02:37,427 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler (main): Local resource: piggybank.jar
+2022-12-12 02:02:37,452 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:37,461 INFO org.apache.hadoop.conf.Configuration.deprecation (main): mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2022-12-12 02:02:37,488 INFO org.apache.hadoop.conf.Configuration (main): resource-types.xml not found
+2022-12-12 02:02:37,489 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils (main): Unable to find 'resource-types.xml'.
+2022-12-12 02:02:37,516 INFO org.apache.hadoop.conf.Configuration.deprecation (main): mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2022-12-12 02:02:37,591 INFO org.apache.hadoop.conf.Configuration.deprecation (main): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:37,612 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-195: parallelism=138, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx2458m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,612 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: Checkout,c1,c2,c3,c4,c5,c6
+2022-12-12 02:02:37,612 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: Checkout[4,11],Checkout[-1,-1],c1[5,5],c2[6,5],c3[7,5],c4[8,5],c5[9,5],c6[10,5]
+2022-12-12 02:02:37,612 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: 
+2022-12-12 02:02:37,671 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Set auto parallelism for vertex scope-198
+2022-12-12 02:02:37,672 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-198: parallelism=87, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,672 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: r
+2022-12-12 02:02:37,672 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: r[20,4]
+2022-12-12 02:02:37,672 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: 
+2022-12-12 02:02:37,675 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Setting distinct combiner class between scope-195 and scope-198
+2022-12-12 02:02:37,720 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-202: parallelism=186, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx2458m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,720 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: l,l2,l3,l4,l5,l6,l7
+2022-12-12 02:02:37,720 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: l[12,4],l[-1,-1],l2[13,5],l3[14,5],l4[15,5],null[-1,-1],l5[16,5],l6[17,5],l7[18,5]
+2022-12-12 02:02:37,720 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: 
+2022-12-12 02:02:37,760 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Set auto parallelism for vertex scope-205
+2022-12-12 02:02:37,760 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-205: parallelism=83, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,760 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: r
+2022-12-12 02:02:37,760 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: r[20,4]
+2022-12-12 02:02:37,760 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: 
+2022-12-12 02:02:37,761 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Setting distinct combiner class between scope-202 and scope-205
+2022-12-12 02:02:37,801 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Set auto parallelism for vertex scope-209
+2022-12-12 02:02:37,802 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-209: parallelism=170, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,802 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: r,r2
+2022-12-12 02:02:37,802 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: r[20,4],r2[25,5]
+2022-12-12 02:02:37,802 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: HASH_JOIN
+2022-12-12 02:02:37,831 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-210: parallelism=1, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx2458m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,831 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: Book,b1,r2
+2022-12-12 02:02:37,831 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: Book[22,7],Book[-1,-1],b1[23,5],r2[25,5]
+2022-12-12 02:02:37,831 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: 
+2022-12-12 02:02:37,862 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Set auto parallelism for vertex scope-211
+2022-12-12 02:02:37,862 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-211: parallelism=999, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,862 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: f,r2
+2022-12-12 02:02:37,862 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: r2[25,5],f[28,4]
+2022-12-12 02:02:37,862 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: HASH_JOIN
+2022-12-12 02:02:37,886 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-212: parallelism=1, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx2458m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,886 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: Rain,f
+2022-12-12 02:02:37,886 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: Rain[27,7],Rain[-1,-1],f[28,4]
+2022-12-12 02:02:37,887 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: 
+2022-12-12 02:02:37,918 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Set auto parallelism for vertex scope-213
+2022-12-12 02:02:37,918 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-213: parallelism=999, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,918 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: f,f1,f2
+2022-12-12 02:02:37,918 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: f[28,4],f2[30,5],f1[29,5]
+2022-12-12 02:02:37,918 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: HASH_JOIN
+2022-12-12 02:02:37,945 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Set auto parallelism for vertex scope-214
+2022-12-12 02:02:37,946 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-214: parallelism=999, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,946 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: f2,order_by_data
+2022-12-12 02:02:37,946 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: f2[30,5],order_by_data[32,16]
+2022-12-12 02:02:37,946 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: GROUP_BY,SAMPLER
+2022-12-12 02:02:37,980 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Estimate quantile for sample aggregation vertex scope-224
+2022-12-12 02:02:37,987 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-224: parallelism=1, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:37,987 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: 
+2022-12-12 02:02:37,987 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: 
+2022-12-12 02:02:37,987 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: 
+2022-12-12 02:02:38,010 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-235: parallelism=-1, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:38,010 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: order_by_data
+2022-12-12 02:02:38,011 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: order_by_data[32,16]
+2022-12-12 02:02:38,011 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: 
+2022-12-12 02:02:38,047 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Set VertexManagerPlugin to PartitionerDefinedParallelismVertexManager for vertex scope-237
+2022-12-12 02:02:38,047 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): For vertex - scope-237: parallelism=-1, memory=3072, java opts=-Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4916m -Dlog4j.configuratorClass=org.apache.tez.common.TezLog4jConfigurator -Dlog4j.configuration=tez-container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dtez.root.logger=INFO,CLA 
+2022-12-12 02:02:38,047 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Processing aliases: 
+2022-12-12 02:02:38,047 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Detailed locations: 
+2022-12-12 02:02:38,047 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder (main): Pig features in the vertex: ORDER_BY
+2022-12-12 02:02:38,116 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler (main): Total estimated parallelism is 5662
+2022-12-12 02:02:38,157 INFO org.apache.pig.tools.pigstats.tez.TezScriptState (PigTezLauncher-0): Pig script settings are added to the job
+2022-12-12 02:02:38,174 INFO org.apache.tez.client.TezClient (PigTezLauncher-0): Tez Client Version: [ component=tez-api, version=0.9.2, revision=${buildNumber}, SCM-URL=scm:git:https://gitbox.apache.org/repos/asf/tez.git, buildTime=2022-08-12T10:29:50Z ]
+2022-12-12 02:02:38,207 INFO org.apache.hadoop.yarn.client.RMProxy (PigTezLauncher-0): Connecting to ResourceManager at ip-172-31-48-151.us-west-2.compute.internal/172.31.48.151:8032
+2022-12-12 02:02:38,349 INFO org.apache.hadoop.yarn.client.AHSProxy (PigTezLauncher-0): Connecting to Application History server at ip-172-31-48-151.us-west-2.compute.internal/172.31.48.151:10200
+2022-12-12 02:02:38,353 INFO org.apache.tez.client.TezClient (PigTezLauncher-0): Session mode. Starting session.
+2022-12-12 02:02:38,372 INFO org.apache.tez.client.TezClientUtils (PigTezLauncher-0): Using tez.lib.uris value from configuration: hdfs:///apps/tez/tez.tar.gz
+2022-12-12 02:02:38,372 INFO org.apache.tez.client.TezClientUtils (PigTezLauncher-0): Using tez.lib.uris.classpath value from configuration: null
+2022-12-12 02:02:38,383 INFO org.apache.tez.client.TezClient (PigTezLauncher-0): Tez system stage directory hdfs://ip-172-31-48-151.us-west-2.compute.internal:8020/tmp/temp2002455939/.tez/application_1670804063394_0011 doesn't exist and is created
+2022-12-12 02:02:38,387 INFO org.apache.hadoop.conf.Configuration.deprecation (PigTezLauncher-0): yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2022-12-12 02:02:38,493 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (PigTezLauncher-0): Submitted application application_1670804063394_0011
+2022-12-12 02:02:38,494 INFO org.apache.tez.client.TezClient (PigTezLauncher-0): The url to track the Tez Session: http://ip-172-31-48-151.us-west-2.compute.internal:20888/proxy/application_1670804063394_0011/
+2022-12-12 02:02:42,599 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (PigTezLauncher-0): Submitting DAG PigLatin:filterfirst_real.pig-0_scope-0
+2022-12-12 02:02:42,599 INFO org.apache.tez.client.TezClient (PigTezLauncher-0): Submitting dag to TezSession, sessionName=PigLatin:filterfirst_real.pig, applicationId=application_1670804063394_0011, dagName=PigLatin:filterfirst_real.pig-0_scope-0, callerContext={ context=PIG, callerType=PIG_SCRIPT_ID, callerId=PIG-filterfirst_real.pig-6c34e94f-73e1-4bfc-97d9-de4e37ba0981 }
+2022-12-12 02:02:42,972 INFO org.apache.tez.client.TezClient (PigTezLauncher-0): Submitted dag to TezSession, sessionName=PigLatin:filterfirst_real.pig, applicationId=application_1670804063394_0011, dagId=dag_1670804063394_0011_1, dagName=PigLatin:filterfirst_real.pig-0_scope-0
+2022-12-12 02:02:42,978 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (PigTezLauncher-0): Submitted DAG PigLatin:filterfirst_real.pig-0_scope-0. Application id: application_1670804063394_0011
+2022-12-12 02:02:43,138 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): HadoopJobId: job_1670804063394_0011
+2022-12-12 02:02:43,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2491 Succeeded: 0 Running: 0 Failed: 0 Killed: 0, diagnostics=, counters=null
+2022-12-12 02:03:03,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2491 Succeeded: 2 Running: 14 Failed: 0 Killed: 0, diagnostics=, counters=null
+2022-12-12 02:03:23,980 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2491 Succeeded: 25 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 1, diagnostics=, counters=null
+2022-12-12 02:03:43,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2491 Succeeded: 51 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 3, diagnostics=, counters=null
+2022-12-12 02:04:03,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2491 Succeeded: 83 Running: 13 Failed: 0 Killed: 0 KilledTaskAttempts: 4, diagnostics=, counters=null
+2022-12-12 02:04:23,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2491 Succeeded: 120 Running: 13 Failed: 0 Killed: 0 KilledTaskAttempts: 5, diagnostics=, counters=null
+2022-12-12 02:04:43,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 143 Running: 12 Failed: 0 Killed: 0 KilledTaskAttempts: 6, diagnostics=, counters=null
+2022-12-12 02:05:03,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 171 Running: 12 Failed: 0 Killed: 0 KilledTaskAttempts: 8, diagnostics=, counters=null
+2022-12-12 02:05:23,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 190 Running: 13 Failed: 0 Killed: 0 KilledTaskAttempts: 9, diagnostics=, counters=null
+2022-12-12 02:05:43,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 215 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 10, diagnostics=, counters=null
+2022-12-12 02:06:03,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 236 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 12, diagnostics=, counters=null
+2022-12-12 02:06:23,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 261 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 13, diagnostics=, counters=null
+2022-12-12 02:06:43,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 284 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 14, diagnostics=, counters=null
+2022-12-12 02:07:03,980 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 309 Running: 13 Failed: 0 Killed: 0 KilledTaskAttempts: 16, diagnostics=, counters=null
+2022-12-12 02:07:23,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 326 Running: 11 Failed: 0 Killed: 0 KilledTaskAttempts: 17, diagnostics=, counters=null
+2022-12-12 02:07:43,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2524 Succeeded: 336 Running: 13 Failed: 0 Killed: 0 KilledTaskAttempts: 18, diagnostics=, counters=null
+2022-12-12 02:08:03,979 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 1476 Succeeded: 433 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 21, diagnostics=, counters=null
+2022-12-12 02:08:23,980 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 1476 Succeeded: 476 Running: 3 Failed: 0 Killed: 0 KilledTaskAttempts: 23, diagnostics=, counters=null
+2022-12-12 02:08:40,904 INFO org.apache.tez.common.counters.Limits (PigTezLauncher-0): Counter limits initialized with parameters:  GROUP_NAME_MAX=256, MAX_GROUPS=500, COUNTER_NAME_MAX=64, MAX_COUNTERS=1200
+2022-12-12 02:08:40,907 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (PigTezLauncher-0): DAG Status: status=SUCCEEDED, progress=TotalTasks: 488 Succeeded: 488 Running: 0 Failed: 0 Killed: 0 KilledTaskAttempts: 24, diagnostics=, counters=Counters: 71
+	org.apache.tez.common.counters.DAGCounter
+		NUM_KILLED_TASKS=24
+		NUM_SUCCEEDED_TASKS=488
+		TOTAL_LAUNCHED_TASKS=493
+		OTHER_LOCAL_TASKS=1
+		RACK_LOCAL_TASKS=326
+		AM_CPU_MILLISECONDS=31830
+		AM_GC_TIME_MILLIS=311
+	File System Counters
+		FILE_BYTES_READ=9028321521
+		FILE_BYTES_WRITTEN=11730922076
+		FILE_READ_OPS=0
+		FILE_LARGE_READ_OPS=0
+		FILE_WRITE_OPS=0
+		HDFS_BYTES_READ=0
+		HDFS_BYTES_WRITTEN=0
+		HDFS_READ_OPS=0
+		HDFS_LARGE_READ_OPS=0
+		HDFS_WRITE_OPS=0
+		S3_BYTES_READ=21705734725
+		S3_BYTES_WRITTEN=187646
+		S3_READ_OPS=0
+		S3_LARGE_READ_OPS=0
+		S3_WRITE_OPS=0
+	org.apache.tez.common.counters.TaskCounter
+		NUM_SPECULATIONS=24
+		REDUCE_INPUT_GROUPS=44130874
+		REDUCE_INPUT_RECORDS=144609988
+		COMBINE_INPUT_RECORDS=0
+		SPILLED_RECORDS=301284593
+		NUM_SHUFFLED_INPUTS=69181
+		NUM_SKIPPED_INPUTS=19837
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		MERGED_MAP_OUTPUTS=189526807
+		GC_TIME_MILLIS=221915
+		CPU_MILLISECONDS=4321590
+		PHYSICAL_MEMORY_BYTES=1178718961664
+		VIRTUAL_MEMORY_BYTES=2594583404544
+		COMMITTED_HEAP_BYTES=1178718961664
+		INPUT_RECORDS_PROCESSED=147012905
+		INPUT_SPLIT_LENGTH_BYTES=21702938188
+		OUTPUT_RECORDS=182816660
+		OUTPUT_LARGE_RECORDS=0
+		OUTPUT_BYTES=15475392505
+		OUTPUT_BYTES_WITH_OVERHEAD=11014445205
+		OUTPUT_BYTES_PHYSICAL=5770742012
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=587408127
+		ADDITIONAL_SPILLS_BYTES_READ=7192229153
+		ADDITIONAL_SPILL_COUNT=36
+		SHUFFLE_CHUNK_COUNT=486
+		SHUFFLE_BYTES=5770741964
+		SHUFFLE_BYTES_DECOMPRESSED=11014445205
+		SHUFFLE_BYTES_TO_MEM=4346580988
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_DISK_DIRECT=1424160976
+		NUM_MEM_TO_DISK_MERGES=0
+		NUM_DISK_TO_DISK_MERGES=103
+		SHUFFLE_PHASE_TIME=146902
+		MERGE_PHASE_TIME=292251
+		FIRST_EVENT_RECEIVED=12016
+		LAST_EVENT_RECEIVED=96573
+	MultiStoreCounters
+		Output records in _0_output=4651
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	org.apache.hadoop.mapreduce.TaskCounter
+		COMBINE_INPUT_RECORDS=119732547
+		COMBINE_OUTPUT_RECORDS=81535178
+	org.apache.pig.PigWarning
+		ACCESSING_NON_EXISTENT_FIELD=51
+		FIELD_DISCARDED_TYPE_CONVERSION_FAILED=3
+		UDF_WARNING_1=15
+	org.apache.pig.builtin.REPLACE
+		UDF_WARNING_1=15
+2022-12-12 02:08:41,174 WARN org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Encountered Warning UDF_WARNING_1 15 time(s).
+2022-12-12 02:08:41,174 WARN org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Encountered Warning FIELD_DISCARDED_TYPE_CONVERSION_FAILED 3 time(s).
+2022-12-12 02:08:41,174 WARN org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Encountered Warning ACCESSING_NON_EXISTENT_FIELD 51 time(s).
+2022-12-12 02:08:41,180 INFO org.apache.pig.tools.pigstats.tez.TezPigScriptStats (main): Script Statistics:
+
+       HadoopVersion: 3.2.1-amzn-8                                                                                        
+          PigVersion: 0.17.0                                                                                              
+          TezVersion: 0.9.2                                                                                               
+              UserId: hadoop                                                                                              
+            FileName: s3://cs6240-assignment1-seanstevens/project/filterfirst_real.pig                                    
+           StartedAt: 2022-12-12 02:02:36                                                                                 
+          FinishedAt: 2022-12-12 02:08:41                                                                                 
+            Features: HASH_JOIN,GROUP_BY,ORDER_BY,DISTINCT,FILTER                                                         
+
+Success!
+
+
+DAG 0:
+                                    Name: PigLatin:filterfirst_real.pig-0_scope-0                                                             
+                           ApplicationId: job_1670804063394_0011                                                                              
+                      TotalLaunchedTasks: 493                                                                                                 
+                           FileBytesRead: 9028321521                                                                                          
+                        FileBytesWritten: 11730922076                                                                                         
+                           HdfsBytesRead: 0                                                                                                   
+                        HdfsBytesWritten: 0                                                                                                   
+      SpillableMemoryManager spill count: 0                                                                                                   
+                Bags proactively spilled: 0                                                                                                   
+             Records proactively spilled: 0                                                                                                   
+
+DAG Plan:
+Tez vertex scope-195	->	Tez vertex scope-198,
+Tez vertex scope-198	->	Tez vertex scope-209,
+Tez vertex scope-202	->	Tez vertex scope-205,
+Tez vertex scope-205	->	Tez vertex scope-209,
+Tez vertex scope-209	->	Tez vertex scope-211,
+Tez vertex scope-210	->	Tez vertex scope-211,
+Tez vertex scope-211	->	Tez vertex scope-213,
+Tez vertex scope-212	->	Tez vertex scope-213,
+Tez vertex scope-213	->	Tez vertex scope-214,
+Tez vertex scope-214	->	Tez vertex scope-224,Tez vertex scope-235,
+Tez vertex scope-224	->	Tez vertex scope-235,
+Tez vertex scope-235	->	Tez vertex scope-237,
+Tez vertex scope-237
+
+Vertex Stats:
+VertexId Parallelism TotalTasks   InputRecords   ReduceInputRecords  OutputRecords  FileBytesRead FileBytesWritten  HdfsBytesRead HdfsBytesWritten Alias	Feature	Outputs
+scope-195        138        138       41389466                    0       41374769      273317235       1946667394              0                0 Checkout,c1,c2,c3,c4,c5,c6		
+scope-198         87         22              0             40806134       40666996     3053662671       3403317536              0                0 r		
+scope-202        186        186      105411020                    0       76784372      282938037       2802606571              0                0 l,l2,l3,l4,l5,l6,l7		
+scope-205         83         83              0             40724393         551181      876030831        107604559              0                0 r		
+scope-209         -1         25              0             41218177       19208831     1008851234        533501482              0                0 r,r2	HASH_JOIN	
+scope-210          1          1         207592                    0         207592          47968          3629375              0                0 Book,b1,r2		
+scope-211        999         23              0             19416423        2435284     2971173687       2502004150              0                0 f,r2	HASH_JOIN	
+scope-212          1          1            175                    0            175          47968            30619              0                0 Rain,f		
+scope-213        999          5              0              2435459        1573406      562084252        431334619              0                0 f,f1,f2	HASH_JOIN	
+scope-214         -1          1              0                 4651           4751          55209           110933              0                0 f2,order_by_data	GROUP_BY,SAMPLER	
+scope-224          1          1              0                  100              1           1442             1588              0                0 		
+scope-235         -1          1           4652                    0           4651          54378            56641              0                0 order_by_data		
+scope-237         -1          1              0                 4651           4651          56609            56609              0                0 	ORDER_BY	s3://cs6240-assignment1-seanstevens/project/output,
+
+Input(s):
+Successfully read 207592 records from: "s3://cs6240-assignment1-seanstevens/project/input/normalized_book32_listing copy.csv"
+Successfully read 105411020 records from: "s3://cs6240-assignment1-seanstevens/project/input/Normalized_Library_Collection_Inventory.csv"
+Successfully read 175 records from: "s3://cs6240-assignment1-seanstevens/project/input/rain_gauge_data_normalized_averaged.csv"
+Successfully read 41389466 records from: "s3://cs6240-assignment1-seanstevens/project/input/Checkouts_by_Title.csv"
+
+Output(s):
+Successfully stored 4651 records in: "s3://cs6240-assignment1-seanstevens/project/output"
+
+2022-12-12 02:08:41,200 INFO org.apache.pig.Main (main): Pig script completed in 6 minutes, 9 seconds and 991 milliseconds (369991 ms)
+2022-12-12 02:08:41,205 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Shutting down thread pool
+2022-12-12 02:08:41,212 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezSessionManager (shutdown-hook-0): Shutting down Tez session org.apache.tez.client.TezClient@3ea7d8c7
+2022-12-12 02:08:41,213 INFO org.apache.tez.client.TezClient (shutdown-hook-0): Shutting down Tez Session, sessionName=PigLatin:filterfirst_real.pig, applicationId=application_1670804063394_0011

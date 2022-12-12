@@ -1,0 +1,158 @@
+2022-12-12 02:00:13,069 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2544 Succeeded: 409 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 17, diagnostics=, counters=null
+2022-12-12 02:00:33,069 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 2456 Succeeded: 425 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 18, diagnostics=, counters=null
+2022-12-12 02:00:53,069 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 1480 Succeeded: 454 Running: 14 Failed: 0 Killed: 0 KilledTaskAttempts: 20, diagnostics=, counters=null
+2022-12-12 02:01:13,069 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (Timer-0): DAG Status: status=RUNNING, progress=TotalTasks: 490 Succeeded: 487 Running: 2 Failed: 0 Killed: 0 KilledTaskAttempts: 22, diagnostics=, counters=null
+2022-12-12 02:01:22,600 INFO org.apache.tez.common.counters.Limits (PigTezLauncher-0): Counter limits initialized with parameters:  GROUP_NAME_MAX=256, MAX_GROUPS=500, COUNTER_NAME_MAX=64, MAX_COUNTERS=1200
+2022-12-12 02:01:22,604 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezJob (PigTezLauncher-0): DAG Status: status=SUCCEEDED, progress=TotalTasks: 492 Succeeded: 492 Running: 0 Failed: 0 Killed: 0 KilledTaskAttempts: 22, diagnostics=, counters=Counters: 71
+	org.apache.tez.common.counters.DAGCounter
+		NUM_KILLED_TASKS=22
+		NUM_SUCCEEDED_TASKS=492
+		TOTAL_LAUNCHED_TASKS=495
+		OTHER_LOCAL_TASKS=1
+		RACK_LOCAL_TASKS=326
+		AM_CPU_MILLISECONDS=30610
+		AM_GC_TIME_MILLIS=364
+	File System Counters
+		FILE_BYTES_READ=8796942123
+		FILE_BYTES_WRITTEN=11751026769
+		FILE_READ_OPS=0
+		FILE_LARGE_READ_OPS=0
+		FILE_WRITE_OPS=0
+		HDFS_BYTES_READ=0
+		HDFS_BYTES_WRITTEN=0
+		HDFS_READ_OPS=0
+		HDFS_LARGE_READ_OPS=0
+		HDFS_WRITE_OPS=0
+		S3_BYTES_READ=21705814113
+		S3_BYTES_WRITTEN=187646
+		S3_READ_OPS=0
+		S3_LARGE_READ_OPS=0
+		S3_WRITE_OPS=0
+	org.apache.tez.common.counters.TaskCounter
+		NUM_SPECULATIONS=22
+		REDUCE_INPUT_GROUPS=44130874
+		REDUCE_INPUT_RECORDS=144609988
+		COMBINE_INPUT_RECORDS=0
+		SPILLED_RECORDS=298016805
+		NUM_SHUFFLED_INPUTS=68327
+		NUM_SKIPPED_INPUTS=19829
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		MERGED_MAP_OUTPUTS=201746432
+		GC_TIME_MILLIS=219203
+		CPU_MILLISECONDS=4223430
+		PHYSICAL_MEMORY_BYTES=1088975536128
+		VIRTUAL_MEMORY_BYTES=2623093702656
+		COMMITTED_HEAP_BYTES=1088975536128
+		INPUT_RECORDS_PROCESSED=147012905
+		INPUT_SPLIT_LENGTH_BYTES=21702938188
+		OUTPUT_RECORDS=182816660
+		OUTPUT_LARGE_RECORDS=0
+		OUTPUT_BYTES=15475392497
+		OUTPUT_BYTES_WITH_OVERHEAD=11179403225
+		OUTPUT_BYTES_PHYSICAL=5897181250
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=591795593
+		ADDITIONAL_SPILLS_BYTES_READ=7134543151
+		ADDITIONAL_SPILL_COUNT=35
+		SHUFFLE_CHUNK_COUNT=490
+		SHUFFLE_BYTES=5897181202
+		SHUFFLE_BYTES_DECOMPRESSED=11179403225
+		SHUFFLE_BYTES_TO_MEM=4412220157
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_DISK_DIRECT=1484961045
+		NUM_MEM_TO_DISK_MERGES=0
+		NUM_DISK_TO_DISK_MERGES=96
+		SHUFFLE_PHASE_TIME=192285
+		MERGE_PHASE_TIME=311994
+		FIRST_EVENT_RECEIVED=11861
+		LAST_EVENT_RECEIVED=141812
+	MultiStoreCounters
+		Output records in _0_output=4651
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	org.apache.hadoop.mapreduce.TaskCounter
+		COMBINE_INPUT_RECORDS=119732547
+		COMBINE_OUTPUT_RECORDS=81535178
+	org.apache.pig.PigWarning
+		ACCESSING_NON_EXISTENT_FIELD=51
+		FIELD_DISCARDED_TYPE_CONVERSION_FAILED=3
+		UDF_WARNING_1=15
+	org.apache.pig.builtin.REPLACE
+		UDF_WARNING_1=15
+2022-12-12 02:01:22,735 WARN org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Encountered Warning ACCESSING_NON_EXISTENT_FIELD 51 time(s).
+2022-12-12 02:01:22,735 WARN org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Encountered Warning UDF_WARNING_1 15 time(s).
+2022-12-12 02:01:22,735 WARN org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Encountered Warning FIELD_DISCARDED_TYPE_CONVERSION_FAILED 3 time(s).
+2022-12-12 02:01:22,739 INFO org.apache.pig.tools.pigstats.tez.TezPigScriptStats (main): Script Statistics:
+
+       HadoopVersion: 3.2.1-amzn-8                                                                                        
+          PigVersion: 0.17.0                                                                                              
+          TezVersion: 0.9.2                                                                                               
+              UserId: hadoop                                                                                              
+            FileName: s3://cs6240-assignment1-seanstevens/project/filterfirst_real.pig                                    
+           StartedAt: 2022-12-12 01:55:26                                                                                 
+          FinishedAt: 2022-12-12 02:01:22                                                                                 
+            Features: HASH_JOIN,GROUP_BY,ORDER_BY,DISTINCT,FILTER                                                         
+
+Success!
+
+
+DAG 0:
+                                    Name: PigLatin:filterfirst_real.pig-0_scope-0                                                             
+                           ApplicationId: job_1670804063394_0010                                                                              
+                      TotalLaunchedTasks: 495                                                                                                 
+                           FileBytesRead: 8796942123                                                                                          
+                        FileBytesWritten: 11751026769                                                                                         
+                           HdfsBytesRead: 0                                                                                                   
+                        HdfsBytesWritten: 0                                                                                                   
+      SpillableMemoryManager spill count: 0                                                                                                   
+                Bags proactively spilled: 0                                                                                                   
+             Records proactively spilled: 0                                                                                                   
+
+DAG Plan:
+Tez vertex scope-167	->	Tez vertex scope-170,
+Tez vertex scope-170	->	Tez vertex scope-181,
+Tez vertex scope-174	->	Tez vertex scope-177,
+Tez vertex scope-177	->	Tez vertex scope-181,
+Tez vertex scope-181	->	Tez vertex scope-183,
+Tez vertex scope-182	->	Tez vertex scope-183,
+Tez vertex scope-183	->	Tez vertex scope-185,
+Tez vertex scope-184	->	Tez vertex scope-185,
+Tez vertex scope-185	->	Tez vertex scope-186,
+Tez vertex scope-186	->	Tez vertex scope-196,Tez vertex scope-207,
+Tez vertex scope-196	->	Tez vertex scope-207,
+Tez vertex scope-207	->	Tez vertex scope-209,
+Tez vertex scope-209
+
+Vertex Stats:
+VertexId Parallelism TotalTasks   InputRecords   ReduceInputRecords  OutputRecords  FileBytesRead FileBytesWritten  HdfsBytesRead HdfsBytesWritten Alias	Feature	Outputs
+scope-167        138        138       41389466                    0       41374769      273317235       1946667394              0                0 Checkout,c2,c3,c4,c5,c6		
+scope-170         87         29              0             40806134       40666996     2988337444       3446662248              0                0 r		
+scope-174        186        186      105411020                    0       76784372      282938037       2802606571              0                0 l,l2,l3,l4,l5,l6,l7		
+scope-177         83         83              0             40724393         551181      883156310         98617472              0                0 r		
+scope-181         -1         22              0             41218177       19208831      933865500        537148467              0                0 r,r2	HASH_JOIN	
+scope-182          1          1         207592                    0         207592          47968          3629375              0                0 Book,b1,r2		
+scope-183        999         23              0             19416423        2435284     2876886496       2491723268              0                0 f,r2	HASH_JOIN	
+scope-184          1          1            175                    0            175          47968            30619              0                0 Rain,f		
+scope-185        999          5              0              2435459        1573406      558177521        423715572              0                0 f,f1,f2	HASH_JOIN	
+scope-186         -1          1              0                 4651           4751          55209           110939              0                0 f2,order_by_data	GROUP_BY,SAMPLER	
+scope-196          1          1              0                  100              1           1448             1594              0                0 		
+scope-207         -1          1           4652                    0           4651          54378            56641              0                0 order_by_data		
+scope-209         -1          1              0                 4651           4651          56609            56609              0                0 	ORDER_BY	s3://cs6240-assignment1-seanstevens/project/output,
+
+Input(s):
+Successfully read 41389466 records from: "s3://cs6240-assignment1-seanstevens/project/input/Checkouts_by_Title.csv"
+Successfully read 207592 records from: "s3://cs6240-assignment1-seanstevens/project/input/normalized_book32_listing copy.csv"
+Successfully read 105411020 records from: "s3://cs6240-assignment1-seanstevens/project/input/Normalized_Library_Collection_Inventory.csv"
+Successfully read 175 records from: "s3://cs6240-assignment1-seanstevens/project/input/rain_gauge_data_normalized_averaged.csv"
+
+Output(s):
+Successfully stored 4651 records in: "s3://cs6240-assignment1-seanstevens/project/output"
+
+2022-12-12 02:01:22,759 INFO org.apache.pig.Main (main): Pig script completed in 6 minutes, 2 seconds and 539 milliseconds (362539 ms)
+2022-12-12 02:01:22,765 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher (main): Shutting down thread pool
+2022-12-12 02:01:22,773 INFO org.apache.pig.backend.hadoop.executionengine.tez.TezSessionManager (shutdown-hook-0): Shutting down Tez session org.apache.tez.client.TezClient@1261f645
+2022-12-12 02:01:22,773 INFO org.apache.tez.client.TezClient (shutdown-hook-0): Shutting down Tez Session, sessionName=PigLatin:filterfirst_real.pig, applicationId=application_1670804063394_0010
